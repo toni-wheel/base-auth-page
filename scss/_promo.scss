@@ -1,0 +1,33 @@
+.promo {
+  flex: 0 0 735px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1250px) {
+    display: none;
+  }
+  &__box {
+    flex-grow: 1;
+    background-color: #000842;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 524px;
+    margin-bottom: 84px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  &__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}

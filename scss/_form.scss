@@ -1,0 +1,122 @@
+.form {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
+  &__logo {
+    margin-top: 31px;
+    margin-left: 42px;
+  }
+  &__content {
+    align-self: center;
+    padding-top: 89px;
+    padding-bottom: 102px;
+    width: 100%;
+    max-width: 432px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 22px;
+  }
+  &__subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    &:last-of-type {
+      margin-bottom: 52px;
+    }
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--blue-color);
+  }
+}
+
+.form-box {
+  &__social {
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-label {
+      margin-bottom: 31px;
+      color: #b5b5b5;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-items {
+      display: flex;
+      & > a {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 50px;
+  & > input {
+    position: relative;
+    width: 100%;
+    padding-bottom: 7px;
+    padding-left: 27px;
+    border-bottom: 3px solid var(--gray-color);
+    color: var(--dark-blue-color);
+    &:focus {
+      border-bottom: 3px solid var(--dark-blue-color);
+    }
+  }
+  &__info {
+    display: block;
+    margin-bottom: 11px;
+    user-select: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray-color);
+  }
+  &__icon {
+    position: absolute;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.btn-box {
+  margin-top: 74px;
+  & > button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background: #0c21c1;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.logo {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
